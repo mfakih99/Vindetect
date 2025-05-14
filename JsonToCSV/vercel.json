@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/Json",
+      "destination": "/"
+    },
+    {
+      "source": "/Json/(.*)",
+      "destination": "/$1"
+    }
+  ]
+} 
