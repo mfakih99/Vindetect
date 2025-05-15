@@ -1,9 +1,27 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.{js,css}",
+      "use": "@vercel/static"
+    }
+  ],
   "routes": [
     {
       "src": "/JsonToCSV",
       "dest": "/index.html"
+    },
+    {
+      "src": "/JsonToCSV/styles.css",
+      "dest": "/styles.css"
+    },
+    {
+      "src": "/JsonToCSV/script.js",
+      "dest": "/script.js"
     },
     {
       "src": "/JsonToCSV/(.*)",
