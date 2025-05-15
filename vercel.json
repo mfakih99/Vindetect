@@ -1,5 +1,17 @@
 {
   "version": 2,
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.vindetect.ai"
+        }
+      ],
+      "destination": "/JsonToCSV/:path*"
+    }
+  ],
   "builds": [
     {
       "src": "*.html",
