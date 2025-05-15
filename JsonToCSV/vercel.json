@@ -1,12 +1,13 @@
 {
-  "rewrites": [
+  "version": 2,
+  "routes": [
     {
-      "source": "/Jsontocsv",
-      "destination": "/index.html"
+      "src": "/Jsontocsv",
+      "dest": "/index.html"
     },
     {
-      "source": "/Jsontocsv/(.*)",
-      "destination": "/$1"
+      "src": "/Jsontocsv/(.*)",
+      "dest": "/$1"
     }
   ],
   "trailingSlash": false,
