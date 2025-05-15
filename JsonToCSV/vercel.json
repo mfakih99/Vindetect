@@ -2,11 +2,11 @@
   "version": 2,
   "routes": [
     {
-      "src": "/JsonToCSV",
+      "src": "/Jsontocsv",
       "dest": "/index.html"
     },
     {
-      "src": "/JsonToCSV/(.*)",
+      "src": "/Jsontocsv/(.*)",
       "dest": "/$1"
     }
   ],
