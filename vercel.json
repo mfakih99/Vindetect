@@ -1,15 +1,5 @@
 {
   "version": 2,
-  "rewrites": [
-    {
-      "source": "/JsonToCSV",
-      "destination": "/"
-    },
-    {
-      "source": "/JsonToCSV/:match*",
-      "destination": "/:match*"
-    }
-  ],
   "builds": [
     {
       "src": "*.html",
@@ -20,7 +10,14 @@
       "use": "@vercel/static"
     }
   ],
-  "trailingSlash": false,
-  "cleanUrls": true,
-  "outputDirectory": "."
+  "routes": [
+    {
+      "src": "/JsonToCSV",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/JsonToCSV/(.*)",
+      "dest": "/$1"
+    }
+  ]
 } 
