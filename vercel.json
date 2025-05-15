@@ -2,14 +2,12 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.vindetect.ai"
-        }
-      ],
-      "destination": "/JsonToCSV/:path*"
+      "source": "/JsonToCSV",
+      "destination": "/"
+    },
+    {
+      "source": "/JsonToCSV/:match*",
+      "destination": "/:match*"
     }
   ],
   "builds": [
