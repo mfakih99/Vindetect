@@ -1,12 +1,14 @@
 {
   "rewrites": [
     {
-      "source": "/Json",
-      "destination": "/"
+      "source": "/Jsontocsv",
+      "destination": "/index.html"
     },
     {
-      "source": "/Json/(.*)",
+      "source": "/Jsontocsv/(.*)",
       "destination": "/$1"
     }
-  ]
+  ],
+  "trailingSlash": false,
+  "cleanUrls": true
 } 
